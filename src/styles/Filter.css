@@ -1,13 +1,13 @@
 input {
   display: flex;
-  justify-content: center;
+  margin-right: 80px;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
   font-family: sans-serif;
   font-size: 13px;
   color: #ffff;
-  border-radius: 10px;
-  border: 10px solid #ffff;
+  border-radius: 5px;
+  border: 1px solid rgba(145, 143, 143, 0.2);
 }
 
 .filter-section {
@@ -20,18 +20,36 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 85%;
   background-color: #ffffff;
-  padding: 16px;
+  padding: 20px;
   border-radius: 13px;
   border: 1px solid #b4b0b0;
+  gap: 5px;
 }
 
 button {
-  background-color: #000000;
-  padding: 5px;
+  background-color: #ffffff;
+  padding: 8px;
   font-family: sans-serif;
-  font-size: 13px;
+  font-size: 10px;
+  color: #000000;
+  border-radius: 16px;
+  border: 1px solid #b4b0b0;
+}
+
+button#active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #000000;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+button:active {
+  background-color: #000000;
   color: #ffff;
-  border-radius: 10px;
 }
