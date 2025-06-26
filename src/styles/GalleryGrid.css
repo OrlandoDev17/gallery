@@ -124,3 +124,9 @@
   font-size: 18px;
   font-weight: normal;
 }
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
