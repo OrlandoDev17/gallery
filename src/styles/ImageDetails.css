@@ -1,0 +1,17 @@
+.image-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.image-detail img {
+  border-radius: 20px;
+  width: 800px;
+  height: auto;
+}
+
+.image-info {
+  text-align: center;
+}

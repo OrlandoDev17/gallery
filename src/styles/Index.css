@@ -1,0 +1,33 @@
+@view-transition {
+  navigaton: auto;
+}
+
+::view-transition-group(*) {
+  animation-duration: 3s;
+}
+
+::view-transition-old(*) {
+  animation-name: old;
+}
+
+::view-transition-new(*) {
+  animation-name: new;
+}
+
+@keyframes old {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes new {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

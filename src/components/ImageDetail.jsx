@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom';
-import { GALLERY_ITEMS } from '../constants/galleryItems';
+import { useParams } from "react-router-dom";
+import { GALLERY_ITEMS } from "../constants/galleryItems";
+import "../styles/ImageDetails.css";
 
 const ImageDetail = () => {
   const { id } = useParams();
-  const image = GALLERY_ITEMS.find(item => item.id === parseInt(id));
+  const image = GALLERY_ITEMS.find((item) => item.id === parseInt(id));
 
   if (!image) {
     return <div>Imagen no encontrada</div>;
